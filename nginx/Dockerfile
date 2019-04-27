@@ -10,9 +10,9 @@ RUN mv /etc/apt/sources.list.d/aliyun_sources.list.bak /etc/apt/sources.list.d/a
 
 RUN set -x && apt-get update && apt-get install --no-install-recommends --no-install-suggests -y curl gnupg2 ca-certificates lsb-release apt-transport-https ca-certificates
 
-RUN echo "deb http://nginx.org/packages/ubuntu `lsb_release -cs` nginx" | sudo tee /etc/apt/sources.list.d/nginx.list
+RUN echo "deb http://nginx.org/packages/ubuntu `lsb_release -cs` nginx" | tee /etc/apt/sources.list.d/nginx.list
 
-RUN curl -fsSL https://nginx.org/keys/nginx_signing.key | sudo apt-key add -
+RUN curl -fsSL https://nginx.org/keys/nginx_signing.key | apt-key add -
 
 RUN apt update && apt install nginx
 
