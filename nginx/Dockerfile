@@ -2,8 +2,8 @@ FROM realmasterlee/ubuntu:18.04.2
 
 LABEL maintainer="realmasterlee<<785530605@qq.com>"
 
-ENV NGINX_VERSION=1.15.12-1~stretch
-ENV NJS_VERSION=1.15.12.0.3.1-1~stretch
+ENV NGINX_VERSION=1.16.0-1~stretch
+ENV NJS_VERSION=1.16.0.0.0.1-1~stretch
 
 RUN mv /etc/apt/sources.list.d/zte_sources.list /etc/apt/sources.list.d/zte_sources.list.bak
 RUN mv /etc/apt/sources.list.d/aliyun_sources.list.bak /etc/apt/sources.list.d/aliyun_sources.list
