@@ -1,4 +1,4 @@
-FROM realmasterlee/ubuntu:18.04
+FROM realmasterlee/ubuntu:18.04.2
 
 LABEL maintainer="realmasterlee<<785530605@qq.com>"
 
